@@ -3,8 +3,8 @@ const app = express();
 
 app.get("/exchange-rate", (req, res) => {
   res.json({
-    dollar: 5.5,
-    euro: 6.4,
+    dollar: 7.5,
+    euro: 6.3,
   });
 });
 app.get("/health", (req, res) => {

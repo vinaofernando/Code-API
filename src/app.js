@@ -1,10 +1,13 @@
 const express = require("express");
+const cors = require("cors");
+
 const app = express();
+app.use(cors());
 
 app.get("/exchange-rate", (req, res) => {
   res.json({
-    dollar: 7.5,
-    euro: 6.3,
+    Dollar: 7.5,
+    Euro: 6.3,
   });
 });
 app.get("/health", (req, res) => {
